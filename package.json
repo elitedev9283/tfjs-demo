@@ -1,0 +1,14 @@
+{
+  "name": "face-recognition-login",
+  "version": "1.0.0",
+  "description": "Login page with face recognition using TensorFlow.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.17.0",
+    "@tensorflow-models/face-landmarks-detection": "^1.0.5",
+    "http-server": "^14.1.1"
+  }
+} 

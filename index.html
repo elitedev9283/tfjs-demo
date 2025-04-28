@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h1>Face Recognition Login</h1>
+            <div class="video-container">
+                <video id="video" width="640" height="480" autoplay></video>
+                <canvas id="canvas" width="640" height="480"></canvas>
+            </div>
+            <div class="controls">
+                <button id="captureButton">Capture Face</button>
+                <button id="loginButton" disabled>Login</button>
+            </div>
+            <div id="status" class="status"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/face-landmarks-detection"></script>
+    <script src="utilities.js"></script>
+    <script src="app.js"></script>
+</body>
+</html> 
