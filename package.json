@@ -4,7 +4,8 @@
   "description": "Login page with face recognition using TensorFlow.js",
   "main": "index.js",
   "scripts": {
-    "start": "http-server -c-1"
+    "start": "http-server -c-1",
+    "https":"http-server -S -C cert.pem -K key.pem -p 8443"
   },
   "dependencies": {
     "@tensorflow/tfjs": "^4.17.0",
